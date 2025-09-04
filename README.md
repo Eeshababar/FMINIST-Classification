@@ -25,3 +25,34 @@ Clone this repo and install dependencies:
 git clone https://github.com/your-username/fmnist-classification.git
 cd fmnist-classification
 pip install -r requirements.txt
+
+
+🧠 Models
+
+1. Neural Network (Baseline)
+Flatten → Dense(128, ReLU) → Dense(64, ReLU) → Dense(10, Softmax)
+Optimizer: Adam
+Loss: Categorical Crossentropy
+Expected Accuracy: ~83%
+
+
+2. Convolutional Neural Network (CNN)
+Conv2D → ReLU → MaxPooling → Dropout
+Dense classifier at the end
+Expected Accuracy: ~90–92%
+
+
+3. Transfer Learning (VGG-19)
+
+Resize 28x28 → 224x224x3
+Pretrained VGG-19 on ImageNet
+Custom dense layers on top
+Freeze/unfreeze conv base
+Expected Accuracy: ~93–95%
+
+
+📌 Future Work
+
+ Hyperparameter tuning with Optuna/W&B
+ Explore ResNet, EfficientNet, MobileNet
+ Add deployment with Streamlit/Gradio
