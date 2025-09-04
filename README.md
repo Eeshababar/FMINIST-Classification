@@ -26,8 +26,9 @@ git clone https://github.com/your-username/fmnist-classification.git
 cd fmnist-classification
 pip install -r requirements.txt
 
+---
 
-🧠 Models
+## 🧠 Models
 
 1. Neural Network (Baseline)
 Flatten → Dense(128, ReLU) → Dense(64, ReLU) → Dense(10, Softmax)
