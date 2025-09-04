@@ -76,7 +76,8 @@ We use the **Fashion-MNIST dataset**, a modern alternative to MNIST:
 
 ---
 
-## ⚙️ Installation
+👩‍💻 Contributor: Eesha Tur Razia Babar
+
 
 Clone this repo and install dependencies:
 
