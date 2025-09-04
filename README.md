@@ -17,17 +17,6 @@ We use the **Fashion-MNIST dataset**, a modern alternative to MNIST:
 
 ---
 
-## ⚙️ Installation
-
-Clone this repo and install dependencies:
-
-```bash
-git clone https://github.com/your-username/fmnist-classification.git
-cd fmnist-classification
-pip install -r requirements.txt
-
----
-
 ## 🧠 Models
 
 1. Neural Network (Baseline)
@@ -57,3 +46,18 @@ Expected Accuracy: ~93–95%
  Hyperparameter tuning with Optuna/W&B
  Explore ResNet, EfficientNet, MobileNet
  Add deployment with Streamlit/Gradio
+
+
+---
+
+## ⚙️ Installation
+
+Clone this repo and install dependencies:
+
+```bash
+git clone https://github.com/your-username/fmnist-classification.git
+cd fmnist-classification
+pip install -r requirements.txt
+
+
+
