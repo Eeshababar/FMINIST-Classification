@@ -30,13 +30,13 @@ We use the **Fashion-MNIST dataset**, a modern alternative to MNIST:
 - `Flatten → Dense(128, ReLU) → Dense(64, ReLU) → Dense(10, Softmax)`  
 - Optimizer: **Adam**  
 - Loss: **Categorical Crossentropy**  
-- Accuracy: ~83%  
+- Accuracy: ~87%  
 
 ---
 
 ### 2️⃣ CNN (Scratch)
 - `Conv2D → ReLU → MaxPooling → Dropout → Dense classifier`  
-- Accuracy: ~90–92%  
+- Accuracy: ~91%  
 
 ---
 
@@ -44,7 +44,7 @@ We use the **Fashion-MNIST dataset**, a modern alternative to MNIST:
 - Input resized: **28×28 → 224×224×3**  
 - Backbone: `VGG19(include_top=False, weights="imagenet")`  
 - Custom dense layers added  
-- Accuracy: ~93–95%  
+- Accuracy: ~92%  
 
 ---
 
@@ -52,7 +52,7 @@ We use the **Fashion-MNIST dataset**, a modern alternative to MNIST:
 - Input: 224×224×3 (ImageNet preprocessing)  
 - Backbone: `ResNet50(include_top=False, weights="imagenet")`  
 - Head: GAP → Dense(10, Softmax)  
-- Accuracy: ~93–95%  
+- Accuracy: ~92%  
 
 ---
 
@@ -60,7 +60,7 @@ We use the **Fashion-MNIST dataset**, a modern alternative to MNIST:
 - Input: 224×224×3 (ImageNet preprocessing)  
 - Backbone: `DenseNet121(include_top=False, weights="imagenet")`  
 - Head: GAP → Dense(10, Softmax)  
-- Accuracy: ~94–96%  
+- Accuracy: ~86%  
 
 ---
 
@@ -68,11 +68,11 @@ We use the **Fashion-MNIST dataset**, a modern alternative to MNIST:
 
 | Model          | Accuracy |
 |----------------|----------|
-| Neural Network | ~83%     |
+| Neural Network | ~87%     |
 | CNN            | ~91%     |
-| VGG-19         | ~94%     |
-| ResNet50       | ~94%     |
-| DenseNet121    | ~95%     |
+| VGG-19         | ~92%     |
+| ResNet50       | ~92%     |
+| DenseNet121    | ~86%     |
 
 ---
 
